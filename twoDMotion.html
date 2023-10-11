@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SBPT :: Two Dimensional Motion</title>
+<link rel = "stylesheet" type = "text/css" href = "./physicsStyle.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header><h1><a href = "index.html">Samuel Brown's Physics Tutoring!</a></h1></header>
+<nav>
+    <ul>
+        <li><a href="measuringEstimating.html">Measuring & Estimating</a></li>
+        <li><a href="oneDMotion.html">One Dimensional Motion</a></li>
+        <li><a href="twoDMotion.html">Two Dimensional Motion</a></li>
+        <li><a href="resources.html">Other Free Resources</a></li>
+    </ul>
+</nav>
+<div id = "wrapper">
+<div id = "twodlogo">
+</div>
+<main>
+<h2>Two Dimensional Motion</h2>
+<p>
+    In this lesson we'll be learning more about the kinematic formulas and how to derive them, how to add 
+    subtract vectors to find a resulting vector, projectile motion problems, 
+    and relative velocity. 
+</p>
+<h3>Deriving the Kinematic formulas</h3>
+<ul>
+    <li>v=v<sub>0</sub>+at</li>
+    <li>&#8710;S=&frac12;(v+v<sub>0</sub>)t</li>
+    <li>&#8710;S=v<sub>0</sub>+&frac12;at<sup>2</sup></li>
+    <li>&#8710;S=v-&frac12;at<sup>2</sup></li>
+    <li>v<sup>2</sup>=v<sub>0</sub><sup>2</sup>+2a&#8710;S</li>
+</ul>
+    <p>In this section I will be deriving some of the Kinematic formulas given above. 
+    These equations are derived when acceleration is constant. Acceleration is the rate of change of velocity, 
+    this means acceleration is the slope of the function v(t) and since acceleration is constant the function 
+    would be linear.</p>
+    
+<div class = "emphasis">v=v<sub>0</sub>+at</div><br>
+<div><img src="./Images/basicGraphExample.jpg" alt="Velocity/Time Graph"></div>
+    <p>The image above shows a graph of Velocity by Time, Velocity is the vertical axis, time is the horizontal axis, 
+    initial velocity is the Velocity intercept, and the slope is acceleration. The equation for a line is 
+    y=mx+b where y is the vertical axis, m is the slope, x is the horizontal axis, and be is the y-intercept. 
+    Simply substituting the variables with the variables from our graph gives us v=v<sub>0</sub>+at Which is
+    the first kinematic formula.</p>
+<div class="emphasis">&#8710;S=&frac12;(v+v<sub>0</sub>)t</div>
+    Displacment is Velocity multiplied by time. Which can be represented on our graph as the area under the curve 
+    of V(t).
+<div><img src="./Images/Displacement0GraphExample.jpg" alt="Area Under Velocity over time graph"></div>
+    Displacement is equal to the average velocity devided by time when acceleration is constant. In the kinematic 
+    formulas acceleration is constant, which means that &#8710;S=&frac12;(v+v<sub>0</sub>)t Which is our second 
+    kinematic formula!
+<h3>Vector addition</h3>
+<p>
+    When adding two vectors together they are placed tip to tail and their addition sums to a resultant vector 
+    where the beginning of the vector starts at the start of the first vector and ends at the end of the second 
+    vector.
+</p>
+<div class = "emphasis">Example</div>
+    First we have Vector A
+<div><img src="./Images/VectorAGraphExample.jpg" alt="Unlabeled graph with a random vector named a"></div>
+    Adding Vector B to Vector A
+<div><img src="./Images/VectorABGraphExample.jpg" alt="Same unlabeled graph but with a random vector b added to a"></div>
+    The addition of Vector B and Vector A is the resulting vector, drawn in red.
+<div><img src="./Images/VectorRGraphExample.jpg" alt="Same unlabled graph with the resultant displayed in red added to it"></div>
+<p>
+    Finding the value of the resultant is as simple as adding the vertical and horizontal components of the vectors. 
+    Using trigonmetry we know that sine = opposite/hypotenuse and cosine = adjacent/hypotenuse. This will be very important 
+    for figuring out the vertical and horizontal component as the vertical component is the magnitude of the vector 
+    multiplied by the sine of theta. Where theta equals the angle between the vector and the horizontal. The horizontal 
+    component is the magnitude of the vector multiplied by the cosine of theta. Where theta is the angle between the vector 
+    and the horizontal. V<sub>y</sub>=Vsin(&#1012;) and V<sub>x</sub>=Vcos(&#1012;) respectively.<br>
+    The image below shows the vector A and b broken into components.
+</p>
+<img src="./Images/VectorComponentsGraphExample.jpg" alt="Components of Vectors A and B">
+<table>
+    <tr>
+        <th></th>
+        <th>Vector A</th>
+        <th>Vector B</th>
+        <th>Resultant</th>
+    </tr>
+    <tr>
+        <td>x component</td>
+        <td>Acos&#1012;</td>
+        <td>Bcos&#981;</td>
+        <td>Acos&#1012;+Bcos&#981;</td>
+    </tr>
+    <tr>
+        <td>y component</td>
+        <td>Asin&#1012;</td>
+        <td>Bsin&#981;</td>
+        <td>Asin&#1012;+Bsin&#981;</td>
+    </tr>
+</table>
+<p>In this example, the y-components are both positive and add together. But the x-components are pointing in opposite 
+directions, in order to determine the magnitude of the resultant's x-component, Vector A's x-component will be negative.
+This is demonstrated in the image below.</p>
+<img src="./Images/VectorRComponentsGraphExample.jpg" alt="Components of Resultant Vector">
+<p>
+    To find the magnitude of the Resultant vector we simply have to apply the pathagorean theorem. a<sup>2</sup>+b<sup>2</sup>=c<sup>2</sup><br>
+    R<sub>x</sub><sup>2</sup>+R<sub>y</sub><sup>2</sup> = R<sup>2</sup><br>
+    R = &#8730;(R<sub>x</sub><sup>2</sup>+R<sub>y</sub><sup>2</sup>)<br>
+    To find the angle from the horizontal, &#955;, we can use some trigonometry. We have the x and y components. 
+    Tangent = Opposite/Adjacent, tan = y/x, therefor &#955; = arctan(R<sub>y</sub>/R<sub>x</sub>)
+</p>
+<h3>Projectile Motion</h3>
+<p>
+    Projectile motion problems refer to a type of problem where an object has been launched into the air, 
+    usually at an angle. Using our knowledge of the Kinematic formulas and adding vectors, we can solve these 
+    problems.
+    </p>
+    <div class="emphasis">Example</div>
+    <p>
+    A ball is kicked with a velocity of 18m/s at an angle of 38 degrees from the horizontal how many seconds pass 
+    before the ball lands on the ground? (ignore air resistance)<br>
+    As always, I like to draw a picture first.
+</p>
+<img src="./Images/projectileMotionExample.jpg" alt="Illustration of ball with trajectory">
+<p>
+    Finding the time of the projectile with just the velocity and the acceleration from gravity can be done 
+    by using the kinematic formula v=v<sub>0</sub>+at and the y-component of the initial velocity. Since 
+    we are ignoring friction we know the acceleration of the object is only the force of gravity and that 
+    means the object will accelerate while moving downward at the same rate it decelerated while it was 
+    moving upward. Since the object will travel the same distance both upwards and downwards, the final 
+    velocity will be the opposite of the initial velocity. <br>
+    -18sin(38)m/s = 18sin(38)m/s - 9.8m/s<sup>2</sup>t<br>
+    (-36sin(38)m/s)/(-9.8m/s<sup>2</sup>) = t<br>
+    t = 2.26s
+</p>
+<h3>Comprehension Question</h3>
+<p>A ball is kicked with a velocity of 18m/s at an angle of 38 degrees from the horizontal how many meters does it travel 
+    before it hits the ground? (ignore air resistance)<br>
+</p>
+<form id = "compForm" action = "comprehensionResults.html" method="get">
+    <div>
+    <input type="radio" id="rb_a" name="choice" value="a" required>
+    <label for="rb_a">32.1</label><br>
+    <input type="radio" id="rb_b" name="choice" value="b" required>
+    <label for="rb_b">18.5</label><br>
+    <input type="radio" id="rb_c" name="choice" value="c" required>
+    <label for="rb_c">34.3</label><br>
+    <input type="radio" id="rb_d" name="choice" value="d" required>
+    <label for="rb_d">27.9</label>
+    <input type="hidden" name = "answer" value="a">
+    <button type = "submit">Submit Answer</button>
+    </div>
+    </form>
+</main>
+<footer>
+    Copyright © 2020 Samuel Brown Physics Tutoring <br>
+    <a href = "mailto:sbrown481@ivytech.edu">sbrown481@ivytech.edu</a>
+</footer>
+</div>
+</body>
+</html>

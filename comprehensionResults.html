@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type = "text/css" href = "./resultsStyle.css">
+    <title>Results</title>
+</head>
+<body>
+    <div id = "wrapper">
+    Results
+    <div id = "results"></div>
+    <form>
+        <input type="button" value="Go back!" onclick="history.back()">
+    </form>
+    </div>
+    <script>
+        const resultsOut = document.getElementById('results')
+        var answer
+        var choice
+        new URLSearchParams(window.location.search).forEach((value,name)=>{
+        //resultsOut.append(`${name}: ${value}`)
+        //resultsOut.append(document.createElement('br'))
+        if (name == 'choice'){
+            choice = value
+        } else if(name == "answer"){
+            answer = value
+        }
+        })
+        if (answer == choice){
+            resultsOut.append("Correct!")
+        } else{
+            resultsOut.append("Incorrect!")
+        }
+    </script>
+</body>
+</html>

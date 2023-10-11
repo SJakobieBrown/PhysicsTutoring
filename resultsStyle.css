@@ -1,0 +1,16 @@
+:root {
+    --gradColor1:#f3e51d;
+    --gradColor2:#e78f2b;
+    --gradColor3:#711a00;
+    --specialRed:#c41a0e;
+}
+#wrapper{
+    align-self: center;
+    width: 100px;
+    padding-left: 42px;
+    background-color: var(--gradColor1);
+}
+
+body{
+    background-color: var(--gradColor3);
+}

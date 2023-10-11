@@ -1,0 +1,287 @@
+:root {
+    --gradColor1:#f3e51d;
+    --gradColor2:#e78f2b;
+    --gradColor3:#711a00;
+    --specialRed:#c41a0e;
+  }
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--gradColor3);
+    color: var(--gradColor3);
+    font-family: Verdana, Arial, Tahoma, sans-serif;
+    margin: 0%;
+}
+header{
+    background-color: var(--gradColor3);
+    padding: 1em;
+    font-family: Georgia, Times, Times, serif;
+}
+header a{
+    text-decoration: none;
+    letter-spacing: .1ch;
+}
+header a:link{
+color: var(--gradColor2);
+}
+header a:visited{
+color: var(--gradColor2);
+}
+header a:hover{
+color:var(--gradColor1);
+}
+main{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: block;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: var(--gradColor1);
+}
+main a{
+    text-decoration: none;
+    color:var(--gradColor3)
+}
+main a:hover{
+    color: var(--specialRed);
+}
+main ul{
+    list-style-type: none;
+}
+h1{
+    text-align: center;
+    font-size: 1.5em;
+}
+nav{
+    font-size: 1.2em;
+    background-color: var(--gradColor1);
+    text-align: center;
+}
+nav a { text-decoration: none; }
+nav a:link{
+    color: var(--gradColor3);
+}
+nav a:visited{
+    color:var(--gradColor3);
+}
+nav a:hover{
+    color:var(--specialRed);
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    margin:0%;
+    padding-left: 0%;
+}
+nav li{
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    border-bottom: 1px;
+}
+h2{
+    color: var(--specialRed);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3{
+    color: var(--specialRed);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h3 a:hover{
+    color: var(--specialRed);
+}
+dt{
+    color: var(--gradColor3);
+    font-weight: bold;
+}
+.emphasis{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+footer{
+    font-size: .7em;
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    color: white;
+}
+footer a{
+    color:white;
+}
+footer a:hover{
+    color:gray;
+}
+#homelogo{
+    height: 200px;
+    background-image: url("./Images/SiteLogo.jpg");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -200px;
+}
+#measuringlogo{
+    height: 200px;
+    background-image: url("./Images/MeasuringLogo.jpg");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -190px;
+}
+#onedlogo{
+    height: 200px;
+    background-image: url("./Images/OneDLogo.jpg");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -186px;
+}
+#twodlogo{
+    height: 200px;
+    background-image: url("./Images/TwoDLogo.jpg");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -250px;
+}
+#resourceslogo{
+    height: 200px;
+    background-image: url("./Images/ResourcesLogo.jpg");
+    background-size: 200% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -256px;
+}
+section{
+    padding-left: .5em;
+    padding-right: .5em;
+}
+#mobile{
+    display: inline;
+}
+#desktop{
+    display: none;
+}
+table{
+    border:1px solid var(--gradColor3);
+    width: 60%;
+    border-collapse: collapse;
+}
+tr:nth-of-type(even){
+    background-color: var(--gradColor2);
+}
+td{
+    padding: 5px;
+    border:1px solid var(--gradColor3);
+    text-align: center;
+}
+th{
+    padding: 5px;
+    border:1px solid var(--gradColor3);
+}
+.text{
+    text-align: left;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+input{
+    margin-bottom: .5em;
+}
+textarea{
+    margin-bottom: .5em;
+}
+@media only screen and (min-width: 600px) {
+    h1{
+        font-size: 2em;
+        letter-spacing: .25em;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        padding-right: 2em;
+    }
+    nav li{
+        width: 12em;
+        border-bottom: none;
+    }
+    section{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    #flow{
+        display: flex;
+        flex-direction: row;
+    }
+    #mobile{
+        display: none;
+    }
+    #desktop{
+        display: inline;
+    }
+    #homelogo{
+        background-size: auto;
+        background-size: 100% 100%;
+        background-position: 0%;
+    }
+    #measuringlogo{
+        background-size: auto;
+        background-size: 100% 100%;
+        background-position: 0%;
+    }
+    #onedlogo{
+        background-size: auto;
+        background-size: 100% 100%;
+        background-position: 0%;
+    }
+    #twodlogo{
+        background-size: auto;
+        background-size: 100% 100%;
+        background-position: 0%;
+    }
+    #resourceslogo{
+        background-size: auto;
+        background-size: 100% 100%;
+        background-position: 0%;
+    }
+    form{
+        width: 60%;
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 10em 1fr;
+    }
+    form label{
+        grid-column: 1/2;
+    }
+    form input{
+        grid-column: 2/2;
+    }
+    form #mySubmit{
+        grid-column: 2/2;
+        width: 9em;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    body{
+        background-image: linear-gradient(to bottom, var(--gradColor1) 20%, var(--gradColor2) 60%, var(--gradColor3) 100%);
+        }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #wrapper{
+        margin: auto;
+        width: 72%;
+    }
+}

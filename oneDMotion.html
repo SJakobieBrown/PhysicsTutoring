@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>SBPT :: One Dimensional Motion</title>
+<link rel = "stylesheet" type = "text/css" href = "./physicsStyle.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header><h1><a href = "index.html">Samuel Brown's Physics Tutoring!</a></h1></header>
+<nav>
+    <ul>
+        <li><a href="measuringEstimating.html">Measuring & Estimating</a></li>
+        <li><a href="oneDMotion.html">One Dimensional Motion</a></li>
+        <li><a href="twoDMotion.html">Two Dimensional Motion</a></li>
+        <li><a href="resources.html">Other Free Resources</a></li>
+    </ul>
+</nav>
+<div id = "wrapper">
+<div id = "onedlogo">
+</div>
+<main>
+<h2>One Dimensional Motion</h2>
+<p> In this lesson will be learning about kinematics and applying it 
+    in problems with one dimension of motion.
+</p>
+<h3>Intro to Kinematics</h3>
+<h4>Vectors and Scalers</h4>
+<p>
+    Scalers and Vectors are both quantities used in motion problems. Scalers are much like the typical values you've 
+    worked with before. For example, 5 is a value that just has a size also known as a magnitude, in this case a 
+    magnitude is 5. However vectors have both a magnitude and a direction. We'll cover this in more detail in
+    the proceeding sections.
+</p>
+<h4>Position</h4>
+<p>
+    Position is quite simply the location of an object. And is often denoted with 'S' If you are standing 5 meters from a block we cloud define 
+    an axis with the blocks postion at 0 and your postion at 5. In higher dimensions the position will 
+    have more components. If there is another block 2 ft away from the first block in the direction perpendicular 
+    to the direction between you and the block. By the earlier grid, you could say that the first block is at 
+    (0,0), the second block at (0,2), and your position is (5,0). 
+</p>
+<h4>Displacement</h4>
+<p>
+Displaceplacemet is the change in postion of an object, often denoted with &#8710;S, &#8710;x, &#8710;y, etc. 
+Not to be confused with distance which is how much space an object has traveled during motion 
+while displacement is the difference between the intital position and the final position.<br>
+Displacement can be shown in the velocity by time graph as the area under the curve.
+</p>
+<h4>Velocity</h4>
+<p>
+    Before we can discuss velocity, I want to discuss speed. Speed is distance divided by time, which gives you 
+    the rate of travel or the speed. For example, if you walk to a park a mile away in 20 minutes. Your speed 
+    would be 1 mile per 20 minutes or, after some conversion, 3 miles per hour. <br>
+    Velocity is similar to speed except velocity is a vector quantity representing rate of travel and direction. 
+    For example, let's say the park from the speed example is north from your home and now you're walking back 
+    home going south at the speed you were earlier. Your velocity would be 3mph south.<br>
+    It's worth noting that if either the speed or direction of the velocity changes the velocity is not constant.<br>
+    Velocity can be shown on a position by time graph as the slope of the curve. <br>
+    The formula for average velocity is v<sub>ave</sub> = &#8710;S/&#8710;t
+</p>
+<h4>Acceleration</h4>
+<p>
+    Acceleration is vector quantity that represents the change in velocity over time, often denoted as 'a'. 
+    It can be shown in the velocity by time graph as the slope of the curve. The formula for average aceleration 
+    is a = &#8710;v/&#8710;t. 
+</p>
+<h3>Kinematic Formulas</h3>
+<ul>
+    <li>v=v<sub>0</sub>+at</li>
+    <li>&#8710;S=&frac12;(v+v<sub>0</sub>)t</li>
+    <li>&#8710;S=v<sub>0</sub>+&frac12;at<sup>2</sup></li>
+    <li>&#8710;S=v-&frac12;at<sup>2</sup></li>
+    <li>v<sup>2</sup>=v<sub>0</sub><sup>2</sup>+2a&#8710;S</li>
+</ul>
+<p>
+    The Kinematic formulas are very helpful formulas for motion problems, they are comprised of initial velocity, 
+    final velocity, time, acceleration, and displacement. One thing particularly interesting about these 
+    equations. The first equation doesn't involve displacement, the second equation doesn't involve acceleration, 
+    the third equation doesn't involve final velocity, the fourth equation doesn't involve inital velocity, 
+    and the fifth equation doesn't involve time.<br>
+    This is interesting because you're able to use these equations often in combination when solving problems and 
+    often the information you have is a good hint for which kinematic equation you may need!<br>
+    I'll be covering the Kinematic formulas more in the Two-Dimensional Motion lesson.
+</p>
+<h3>Horizontal Motion</h3>
+<p>
+    Horizontal motion is simply one dimensional motion moving horizontally or perpendicular to the force of 
+    gravity.
+    <span class = "emphasis">Example.</span> The driver of a car starts the car from the rest to a speed of 54.0 m/s. 
+    The car achieved this speed in 20.0 s assuming the uniform acceleration of the car throughout, 
+    find the distance covered in this time span.<br>
+    First when approaching a problem, I like to draw a picture to facilitate reasoning.
+</p>
+<img src = "Images/CarAcceleration.jpg" alt="horizontal motion example illustration">
+<p>
+    Looking at our kinematic formulas we can easily see the formula we should use for this problem is the second one. 
+    As it requires intital velocity, final velocity, and time in order to calculate the change in position.<br>
+    &#8710;S=&frac12;(v+v<sub>0</sub>)t<br>
+    &#8710;S=&frac12;(54m/s+0m/s)20s<br>
+    &#8710;S=&frac12;(54m/s)20s<br>
+    &#8710;S=&frac12;(54m)20<br>
+    &#8710;S=&frac12;1080m<br>
+    &#8710;S=540m<br>
+
+</p>
+<h3>Free-Falling Objects</h3>
+<p>
+    Objects are considered to be in free fall when the only force acting upon them is the force of gravity. 
+    In this section we will be learning to solve one dimensional motion problems involving objects that are 
+    in free fall. When near the surface of the earth we use g for gravity which is equal to 9.8m/s<sup>2</sup> 
+    which means in these problems the acceleration will be 9.8m/s<sup>2</sup> downwards.
+    <span class = "emphasis">Example.</span> A person throws a ball directly upward with an initial velocity of 
+    29.4 m/s, How many seconds will it take the ball to reach the highest position it will achieve? (Ignoring air resistance) <br>
+    I'll first draw a picture.    
+</p>
+<img src="./Images/FreeFallExample.jpg" alt="Free Fall Example illustration">
+<p>
+    In the picture I've depicted the ball in the initial position when it's velocity is 29.4m/s directed upward. 
+    as the ball travels it is subjected to the force of gravity and only the force of gravity and therefor is 
+    considered to be in free fall and has an acceleration of 9.8m/s toward the earth, also known as g. Since the 
+    velocity is directed upward but the acceleration is directed downwards the ball will decrease in velocity 
+    at the rate of 9.8m/s. Eventually the velocity will reach 0m/s and at this point the object will be 
+    instantaniously motionless before the acceleration due to gravity makes the velocity change direction and 
+    the object falls downward. At this moment when velocity is 0m/s the object will be at it's highest position. <br>
+    For this problem we will use the first kinematic equation, v=v<sub>0</sub>+at because we have the values for 
+    v, v<sub>0</sub>, and a and we were asked for the time it would take to reach it's highest position.<br>
+    v<sub>0</sub>+at=v<br>
+    at=v-v<sub>0</sub><br>
+    t=<sup>(v-v<sub>0</sub>)</sup>/<sub>a</sub><br>
+    t=<sup>(0-29.4)</sup>/<sub>-9.8</sub><br>
+    t=<sup>29.4</sup>/<sub>9.8</sub><br>
+    t=3seconds
+</p>
+<h3>Comprehension question</h3>
+<p>A person throws a ball directly upward with an initial velocity of 
+    29.4 m/s, How many meters will the ball travel to reach the highest position it will achieve? (Ignoring air resistance)
+</p>
+<form id = "compForm" action = "comprehensionResults.html" method="get">
+<div>
+<input type="radio" id="rb_a" name="choice" value="a" required>
+<label for="rb_a">46.5</label><br>
+<input type="radio" id="rb_b" name="choice" value="b" required>
+<label for="rb_b">40.3</label><br>
+<input type="radio" id="rb_c" name="choice" value="c" required>
+<label for="rb_c">44.7</label><br>
+<input type="radio" id="rb_d" name="choice" value="d" required>
+<label for="rb_d">44.1</label>
+<input type="hidden" name = "answer" value="d">
+<button type = "submit">Submit Answer</button>
+</div>
+</form>
+</main>
+<footer>
+Copyright © 2020 Samuel Brown Physics Tutoring <br>
+<a href = "mailto:sbrown481@ivytech.edu">sbrown481@ivytech.edu</a>
+</footer>
+</div>
+</body>
+</html>
